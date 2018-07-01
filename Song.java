@@ -5,6 +5,12 @@ public class Song {
 	private String featuredArtist;
 	private int ranking;
 
+	public Song(String title, String artist, int ranking) {
+		this.title = title;
+		this.artist = artist;
+		this.ranking = ranking;
+	}
+
 	public Song(String title, String artist, boolean hasFeature, String featuredArtist, int ranking) {
 		this.title = title;
 		this.artist = artist;
