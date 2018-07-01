@@ -1,3 +1,7 @@
+// A class that stores all necessary song details like title, artisit, and 
+// ranking in Rolling Stones' top 100 songs of the century. Could also potentially
+// have a have a featured artist
+
 public class Song {
 	private String title;
 	private String artist;
