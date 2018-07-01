@@ -1,13 +1,14 @@
 import java.util.*;
 import java.io.*;
+import com.google.gson.Gson;
 
 public class SongParsing {
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner input = new Scanner(new File("top100.txt"));
 		ArrayList<Song> songs = new ArrayList<Song>();
 		Map<String, Integer> uniqueArtists = new TreeMap<String, Integer>();
-		parseData(input, songs, uniqueArtists);
-		System.out.println(songs);
+		PrintStream output = new PrintStream(new File("SongDetails.json"));
+		parseData(input, songs, uniqueArtists, output);
 	}
 
 	public static <K, V extends Comparable<V>> Map<K, V> sortByValues(Map<K, V> map) {
@@ -26,7 +27,7 @@ public class SongParsing {
 		return sortedByValues;
     }
 
-    public static void parseData(Scanner input, ArrayList<Song> songs, Map<String, Integer> uniqueArtists) {
+    public static void parseData(Scanner input, ArrayList<Song> songs, Map<String, Integer> uniqueArtists, PrintStream output) {
     	while (input.hasNextLine()) {
 			String line = input.nextLine();
 			int ranking = Integer.parseInt(line.substring(0, line.indexOf(".")));
@@ -41,6 +42,8 @@ public class SongParsing {
 				anotherSong = new Song(title, artist, ranking);
 			}
 			songs.add(anotherSong);
+			Gson g = new Gson();
+			output.println(g.toJson(anotherSong));
 			if (uniqueArtists.containsKey(artist)) {
 				uniqueArtists.put(artist, uniqueArtists.get(artist) + 1);
 			} else {
