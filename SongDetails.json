@@ -1,4 +1,4 @@
-{"title":"Crazy in Love","artist":"Beyoncé and JAY-Z","hasFeature":false,"ranking":1}
+{"title":"Crazy in Love","artist":"Beyoncé","hasFeature":true,"featuredArtist":"Jay-Z","ranking":1}
 {"title":"Paper Planes","artist":"M.I.A.","hasFeature":false,"ranking":2}
 {"title":"Seven Nation Army","artist":"The White Stripes","hasFeature":false,"ranking":3}
 {"title":"Hey Ya!","artist":"OutKast","hasFeature":false,"ranking":4}
@@ -22,7 +22,7 @@
 {"title":"Take Me Out","artist":"Franz Ferdinand","hasFeature":false,"ranking":22}
 {"title":"Ms. Jackson","artist":"Outkast","hasFeature":false,"ranking":23}
 {"title":"Lose Yourself","artist":"Eminem","hasFeature":false,"ranking":24}
-{"title":"Uptown Funk","artist":"Mark Ronson and Bruno Mars","hasFeature":false,"ranking":25}
+{"title":"Uptown Funk","artist":"Mark Ronson","hasFeature":true,"featuredArtist":"Bruno Mars","ranking":25}
 {"title":"Hotline Bling","artist":"Drake","hasFeature":false,"ranking":26}
 {"title":"B.o.B.","artist":"OutKast","hasFeature":false,"ranking":27}
 {"title":"Umbrella","artist":"Rihanna","hasFeature":true,"featuredArtist":"Jay-Z","ranking":28}
@@ -48,7 +48,7 @@
 {"title":"Happy","artist":"Pharrell Williams","hasFeature":false,"ranking":48}
 {"title":"Sign of the Times","artist":"Harry Styles","hasFeature":false,"ranking":49}
 {"title":"The Scientist","artist":"Coldplay","hasFeature":false,"ranking":50}
-{"title":"Single Ladies (Put a Ring on It)","artist":"Beyonce","hasFeature":false,"ranking":51}
+{"title":"Single Ladies (Put a Ring on It)","artist":"Beyoncé","hasFeature":false,"ranking":51}
 {"title":"Chandelier","artist":"Sia","hasFeature":false,"ranking":52}
 {"title":"Oblivion","artist":"Grimes","hasFeature":false,"ranking":53}
 {"title":"Portions for Foxes","artist":"Rilo Kiley","hasFeature":false,"ranking":54}

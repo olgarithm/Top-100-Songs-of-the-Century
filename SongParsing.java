@@ -11,6 +11,7 @@ public class SongParsing {
 		Map<String, Integer> uniqueArtists = new TreeMap<String, Integer>();
 		PrintStream output = new PrintStream(new File("SongDetails.json"));
 		parseData(input, songList, uniqueArtists, output);
+		System.out.println(sortByValues(uniqueArtists));
 	}
 
 	// Given a map, sorts the map in order of key values and
